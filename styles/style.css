@@ -1,0 +1,130 @@
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsla(216, 12%, 54%,0.3);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+  font-family: 'Overpass';
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: flex;
+}
+.component {
+  background-color: var(--VeryDarkBlue);
+  color: var(--White);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.container{
+  background-color: var(--DarkBlue);
+  width: fit-content;
+  padding: 2rem 1.7rem;
+  border-radius: 15px;
+  flex-flow: column wrap;
+  gap: 2rem;
+}
+.starContainer{
+  background-color: var(--MediumGrey);
+  width: fit-content;
+  padding: 15px;
+  border-radius: 100%;
+  display: flex;
+}
+.textContainer{
+  max-width: 20rem;
+  color: var(--LightGrey);
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  font-size: 15px;
+}
+.textContainer h1{
+  color: var(--White);
+  font-weight: 700;
+}
+.interactiveContainer{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+.rateButtons{
+  display: flex;
+  justify-content: space-between;
+}
+.indivButton{
+  background-color: var(--MediumGrey);
+  color: var(--LightGrey);
+  padding: 15px;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.submitButton{
+  background-color: var(--Orange);
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  color: var(--White);
+  text-transform: uppercase;
+  border-radius: 50px;
+  cursor: pointer;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+:is(:hover,:focus).submitButton{
+  background-color: var(--White);
+  color: var(--Orange);
+}
+.indivButton:hover{
+  background-color: var(--Orange);
+  color: var(--White);
+}
+.closeToActive{
+  background-color: var(--LightGrey);
+  color: var(--White);
+}
+.active{
+  background-color: var(--Orange);
+  color: var(--White);
+}
+.thanksIcon{
+  padding: 0.5rem;
+  margin: auto;
+}
+.rateResult{
+  background-color: var(--MediumGrey);
+  padding: 0.3rem 1rem;
+  margin: 0.5rem;
+  border-radius: 20px;
+  color: var(--Orange);
+}
+.thanksTextContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thanksTextContainer p {
+  text-align: center;
+  line-height: 1.5em;
+}
