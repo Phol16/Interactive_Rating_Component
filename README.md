@@ -16,9 +16,9 @@ Desktop View
 
 ### Links
 
-- Source Code: 
+- Source Code: https://github.com/Phol16/Interactive_Rating_Component
 
-- Live Site: 
+- Live Site: https://phol16.github.io/Interactive_Rating_Component/
 
 ### My process
 
