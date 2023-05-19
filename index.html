@@ -6,7 +6,7 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,33 +18,37 @@
   </head>
   <body>
     <div class="component">
-    <div id="mainContent" class="container visible">
-      <section class="starContainer">
-        <img src="./images/icon-star.svg" alt="starIcon" />
-      </section>
-      <main class="textContainer">
-        <h1>How did we do?</h1>
-        <p>
-          Please let us know how we did with your support request. All feedback is
-          appreciated to help us improve our offering!
-        </p>
-      </main>
-      <aside class="interactiveContainer">
-        <div class="rateButtons">
-        </div>
-        <button class="submitButton">submit</button>
-      </aside>
+      <div id="mainContent" class="container visible">
+        <aside class="starContainer" aria-label="starIcon">
+          <img src="./images/icon-star.svg" alt="starIcon" />
+        </aside>
+        <main class="textContainer">
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All feedback is
+            appreciated to help us improve our offering!
+          </p>
+        </main>
+        <aside class="interactiveContainer">
+          <div class="rateButtons"></div>
+          <button class="submitButton">submit</button>
+        </aside>
+      </div>
+      <div id="subContent" class="container hidden">
+        <aside class="thanksIcon" aria-label="illustrationIcon">
+          <img src="./images/illustration-thank-you.svg" alt="Icon"  />
+        </aside>
+        <main class="textContainer thanksTextContainer">
+          <p class="rateResult"></p>
+          <h1>Thank you!</h1>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need more
+            support. don't hesitate to get in touch!
+          </p>
+        </main>
+      </div>
     </div>
-    <div id="subContent" class="container hidden">
-      <img src="./images/illustration-thank-you.svg" alt="Icon" class="thanksIcon"/>
-      <main class="textContainer thanksTextContainer">
-        <p class="rateResult"></p>
-        <h1>Thank you!</h1>
-        <p>We appreciate you taking the time to give a rating. If you ever need more support. don't hesitate to get in touch!</p>
-      </main>
-    </div>
-  </div>
-  <script src="./script/ratingButton.js"></script>
-  <script src="./script/activeButton.js"></script>
+    <script src="./script/ratingButton.js"></script>
+    <script src="./script/activeButton.js"></script>
   </body>
 </html>
