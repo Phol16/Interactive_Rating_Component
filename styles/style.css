@@ -48,7 +48,7 @@ body {
   display: flex;
 }
 .textContainer{
-  max-width: 20rem;
+  max-width: 22rem;
   color: var(--LightGrey);
   display: flex;
   flex-flow: column wrap;
@@ -58,6 +58,9 @@ body {
 .textContainer h1{
   color: var(--White);
   font-weight: 700;
+}
+.textContainer p{
+  line-height: 1.5rem;
 }
 .interactiveContainer{
   display: flex;
@@ -72,13 +75,15 @@ body {
   background-color: var(--MediumGrey);
   color: var(--LightGrey);
   padding: 15px;
-  width: 10px;
-  height: 10px;
+  width: 45px;
+  height: 45px;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
   cursor: pointer;
+  font-size: 0.9rem;
 }
 .submitButton{
   background-color: var(--Orange);
@@ -97,10 +102,6 @@ body {
   color: var(--Orange);
 }
 .indivButton:hover{
-  background-color: var(--Orange);
-  color: var(--White);
-}
-.closeToActive{
   background-color: var(--LightGrey);
   color: var(--White);
 }
@@ -127,4 +128,5 @@ body {
 .thanksTextContainer p {
   text-align: center;
   line-height: 1.5em;
+  max-width: 21rem;
 }

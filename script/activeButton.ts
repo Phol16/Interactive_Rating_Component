@@ -10,12 +10,8 @@ activeButton.forEach((element:Element,index)=>{
   element.addEventListener('click',function (){
     activeButton.forEach(btn => {
       btn.classList.remove('active')
-      btn.classList.remove('closeToActive')
     })
     element.classList.add('active');
-    if(index-1 !== -1){
-    activeButton[index-1].classList.add('closeToActive')
-    }
     selectedRate = (element.children[0]as HTMLDivElement).outerText
   })
 })
